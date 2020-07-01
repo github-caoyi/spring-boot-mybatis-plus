@@ -19,8 +19,13 @@ import java.util.Map;
 @Configuration
 public class DruidConfig {
 
-    //配置Druid的监控
-    //1、配置一个管理后台的Servlet
+    /**
+     * @Author cy
+     * @Date 2020/7/1 10:18
+     * @Description 配置Druid的监控:1.配置一个管理后台的Servlet
+     * @Param
+     * @return
+     **/
     @Bean
     public ServletRegistrationBean statViewServlet(){
         ServletRegistrationBean bean = new ServletRegistrationBean(new StatViewServlet(), "/druid/*");
@@ -32,7 +37,14 @@ public class DruidConfig {
         bean.setInitParameters(initParams);
         return bean;
     }
-    //2、配置一个web监控的filter
+
+    /**
+     * @Author cy
+     * @Date 2020/7/1 10:19
+     * @Description 2.配置一个web监控的filter
+     * @Param
+     * @return
+     **/
     @Bean
     public FilterRegistrationBean webStatFilter(){
         FilterRegistrationBean bean = new FilterRegistrationBean();

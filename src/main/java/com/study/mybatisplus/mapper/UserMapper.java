@@ -18,9 +18,11 @@ import org.apache.ibatis.annotations.Mapper;
 public interface UserMapper extends BaseMapper<User> {
 
     /**
-     *
-     * @param page 分页对象,xml中可以从里面进行取值,传递参数 Page 即自动分页,必须放在第一位(你可以继承Page实现自己的分页对象)
+     * @Author cy
+     * @Date 2020/7/1 10:29
+     * @Description
+     * @Param page 分页对象,xml中可以从里面进行取值,传递参数 Page 即自动分页,必须放在第一位(你可以继承Page实现自己的分页对象)
      * @return 分页对象
-     */
+     **/
     IPage<User> selectPageVo(Page<?> page);
  }
