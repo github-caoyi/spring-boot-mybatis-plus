@@ -13,7 +13,7 @@ spring:
     exclude: com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure  # 为了某些版本的springboot  @SpringBootApplication(exclude= {DataSourceAutoConfiguration.class}) 无法生效
   datasource:
     dynamic:
-      primary: master #设置默认的数据源或者数据源组,默认值即为master，如果读者只是单数据源只需要注释掉slave相关配置即可，这里为了方便演示master与slave保持相同
+      primary: master #设置默认的数据源或者数据源组,默认值即为master，如果只是单数据源只需要注释掉slave相关配置即可
       datasource:
         master:
           url: jdbc:mysql://localhost:3306/ry-vue?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=GMT%2B8
@@ -37,16 +37,3 @@ spring:
       test-while-idle: true
       test-on-borrow: false
       test-on-return: false
-      stat-view-servlet:
-        enabled: true
-        url-pattern: /druid/*
-        login-username: druid
-        login-password: 123456
-      filter:
-        stat:
-          log-slow-sql: true
-          slow-sql-millis: 1000
-          merge-sql: false
-        wall:
-          config:
-            multi-statement-allow: true
