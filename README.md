@@ -6,3 +6,4 @@
  整合mybatis-plus+druid
 #开启druid监控
  DruidConfig配置类
+ 访问路径：http://localhost:8080/druid/index.html    admin/123456
