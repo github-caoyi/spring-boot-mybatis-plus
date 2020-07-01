@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.study.mybatisplus.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Component;
 
 /**
  * <p>
@@ -14,7 +14,7 @@ import org.apache.ibatis.annotations.Mapper;
  * @author cy
  * @since 2020-06-24
  */
-@Mapper
+@Component
 public interface UserMapper extends BaseMapper<User> {
 
     /**

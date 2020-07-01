@@ -2,8 +2,8 @@ package com.study.mybatisplus.controller;
 
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.study.mybatisplus.entity.User;
+import com.study.mybatisplus.framework.MyPage;
 import com.study.mybatisplus.service.IUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -84,7 +84,7 @@ public class UserController {
      */
     @ResponseBody
     @RequestMapping("/list/page")
-    public Map<String, Object> getListPage(@RequestBody Page page) {
+    public Map<String, Object> getListPage(@RequestBody MyPage page) {
         result = new HashMap<>();
         try {
             logger.info("#用户信息列表分页--------");
