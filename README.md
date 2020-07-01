@@ -1,5 +1,6 @@
 ## spring boot、mybatis-plus
-学习springboot+spring-plus
+学习springboot+mybatis-plus
+ mybatis-plus官方文档地址：https://mp.baomidou.com/guide
 
 技术功能点：
 #配置多数据源
