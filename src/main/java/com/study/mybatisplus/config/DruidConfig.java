@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * @Author cy
  * @Date 2020/6/30 10:27
- * @Description
+ * @Description druid数据库连接池配置
  **/
 @Configuration
 public class DruidConfig {
