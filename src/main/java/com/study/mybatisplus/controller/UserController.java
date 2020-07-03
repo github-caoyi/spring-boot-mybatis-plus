@@ -31,7 +31,6 @@ public class UserController {
     private IUserService iUserService;
 
 
-    @ResponseBody
     @RequestMapping("/list")
     public Map<String, Object> getList() {
         result = new HashMap<>();
@@ -47,7 +46,6 @@ public class UserController {
 
     }
 
-    @ResponseBody
     @RequestMapping({"/save", "/update"})
     public void saveOrUpdate(@RequestBody User user) {
         result = new HashMap<>();
@@ -61,7 +59,6 @@ public class UserController {
         }
     }
 
-    @ResponseBody
     @RequestMapping("/delete")
     public void delete(@RequestBody User user) {
         result = new HashMap<>();
@@ -82,7 +79,6 @@ public class UserController {
      * size:每页显示的数量,long类型
      * 可参考其构造方法
      */
-    @ResponseBody
     @RequestMapping("/list/page")
     public Map<String, Object> getListPage(@RequestBody MyPage page) {
         result = new HashMap<>();
