@@ -1,4 +1,4 @@
-//package com.study.mybatisplus.config;
+//package com.study.config;
 //
 //import com.alibaba.fastjson.serializer.SerializerFeature;
 //import com.alibaba.fastjson.support.config.FastJsonConfig;

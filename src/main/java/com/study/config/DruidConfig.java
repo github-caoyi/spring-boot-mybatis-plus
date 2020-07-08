@@ -1,4 +1,4 @@
-package com.study.mybatisplus.config;
+package com.study.config;
 
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
