@@ -31,3 +31,9 @@ mybatis-plus:
 logging:
   level:
     com.study.mybatisplus.mapper: DEBUG
+  file:
+    path: ./.log #可以指定文件生成的路径（可以是绝对路径也可以是相对路径。./代表当前目录），与name只能生效一个
+#    name: mylog.log #直接在根目录下创建文件
+#核心日志开启debug日志级别，将自动配置相关的日志输出到控制台
+#trace: true
+#debug: true
